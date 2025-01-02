@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+    
+    .roboto-condensed-uniquifier {
+      font-family: "Roboto Condensed", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600px;
+      font-style: normal;
+    }
+}
+
+.header{
+    background-image: url(images/toine\ pic.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: left;
+    background-size: cover;
+    position: center;
+
+}
+
+
+nav{
+    display:flex;
+    padding: 2px 3px;
+    justify-content: space-between;
+}
+
+nav:hover{
+    transition: 1s;
+    background: blue;
+}
+
+nav img{
+    width: 80px;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 8px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(247, 237, 237);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #ebebeb;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+.text-box{
+    width: 90%;
+    color:  rgb(253, 253, 253);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text-box h1{
+    font-size: 60px;
+    margin: 30px;
+}
+.text-box p{
+    margin: 30px 0 60px;
+    font-size: 13px;
+    color: rgb(36, 167, 255);
+
+}
+
+nav .fa{
+    display: none;
+
+}
+
+.texting{
+    width: 90%;
+    color:  rgb(253, 253, 253);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 600px){
+    nav{
+        display: all;
+    }
+
+    nav .fa{
+        display: all;
+        color: blue;
+    }
+
+    .text-box{
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    
+    .Gallery{
+        border: 1px solid skyblue;
+        overflow-x: scroll;
+        display: block;
+    }
+    .about-col{
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+} 
+
+.recents{
+    text-align: center;
+    border: 1px solid rgb(233, 255, 36);
+    padding: 20px;
+    background:  #276bff;
+    font-weight: 600px;
+   
+}
+
+.recents h1{
+    font-size: 30px;
+    margin: 30px;
+}
+
+.recents p{
+    margin: 20px;
+}
+
+.Video{
+    display: flex;
+    padding: 30px;
+    margin: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.recents-row{
+    margin: 20px;
+    
+}
+.Pictures{
+    text-align: center;
+}
+
+/*----Headlines----*/
+.course{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    border: 1px blue solid;
+    overflow-x: scroll;
+}
+h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #e1fa02;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    
+    
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0,2);
+}
+
+.top-team{
+    text-align: center;
+    font-size: 25px;
+    height: 55vh;
+    width: 100%;
+    background:rgb(77, 255, 77);
+    margin-bottom: 40px;
+}
+
+.squad{
+    align-items: center;
+   
+}
+
+.Top-Athlete{
+    font-size: 26px;
+    text-align: center;
+    
+}
+
+.Athlete{
+    font-size: 25px; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.performance{
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.fixtures{
+    align-items: center;
+}
+/*----Match resuts---*/
+
+.Matches{
+    text-align: center;
+    border: 1px solid #d1ff02ec;
+    margin: 10px;
+    background-image: url(images/toine\ pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    color: rgb(255, 255, 255);
+}
+
+
+.match-col{
+    background: #e1fa02;
+    margin-bottom: 5%;
+    font-size: 20px; 
+    justify-content: space-evenly;
+    
+}
+
+
+
+.History{
+    text-align: center;
+    
+}
+
+.historical{
+    text-align: center;
+    font-size: 15px;
+}
+
+.items{
+    align-items: center;
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.captains{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.captains h4{
+    text-align: center;
+}
+
+.covid{
+   text-align: left;
+   margin-left: 10px;
+}
+
+.covid h4{
+    text-align: center;
+}
+
+.Personal{
+    text-align: left;
+   margin-left: 10px;
+}
+
+.Personal h4{
+    text-align: center;
+}
+
+.records{
+    text-align: left;
+   margin-left: 10px;
+}
+
+.records h4{
+    text-align: center;
+}
+
+.now{
+    text-align: left;
+}
+
+.now h4{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+
+
+/*---Footer---*/
+
+.footer{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 600;
+
+}
+
+
+/*----About----*/
+
+.sub-header{
+        height: 50vh;
+        width: 100%;
+        background-image: url(images/3.png);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        color: #fff;
+}
+.sub-headerHis{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/toine\ pic.jpg);
+    background-position: left;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.sub-headerArch{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/archers\ squad\ pic\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-headerAstro{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/astros\ squad\ pic\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-headerPan{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/panthers\ squad\ pic\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+.sub-headerCard{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/cardinals.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+.sub-headerRan{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/Rangers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+
+.About-Us{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5%;
+}
+
+.sub-header h1{
+    margin-top: 70px;
+}
+.About-Us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col{
+    border: 1px solid blue;
+}
+.about-col img{
+    width: 60%;
+}
+.about-col img:hover{
+    width: 100%;
+    transition: 1s;
+}
+.about-col:hover{
+    background: blue;
+    transition: 1s;
+}
+
+/*---Player Biography----*/
+
+.Bio{
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 5%;
+    margin-top: 20px;
+}
+
+.sub-header h1{
+    margin-top: 80px;
+}
+
+.Bio-col{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.Bio-col img{
+    width: 60%;
+}
+
+.Bio-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    
+}
+
+/*----Events------*/
+.Events{
+    text-align: center;
+}
+
+.events-col{
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+   
+    
+}
+
+.Even{
+    display: flex;
+    overflow-y: hidden;
+    padding: 20px;
+    border: 1px solid blue;
+    margin: 90px;
+    
+}
+
+
+/*---Contact Us page---*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+
+}
+.contact-us{
+    width:80%;
+    margin:auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+
+.contact-col element{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+/*----Promotional-----*/
+.promotional{
+    text-align: center;
+    background: rgba(0, 253, 240, 0.7);
+}
+
+.promo{
+    align-items: right;  
+}
+
+.social{
+    font-size: 20px;
+    
+}
+
+/*-----Gallery------*/
+
+.Gallery{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.Pictures{
+    display: flex;
+    margin: 60px;
+    
+}
+
+.Gall{
+    padding: 20px;
+}
+
+.Gall:hover{
+    background: lightskyblue;
+    transition: 1s;
+    padding: 30px;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+ 
+/*--------Slider Animation-------*/
+@keyframes slide_animation{
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left:1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+}
+
